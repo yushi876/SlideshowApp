@@ -13,11 +13,6 @@ class ViewController: UIViewController {
     let photos = ["焼肉.jpg","焼きそば.jpg","ラーメン.jpg"]
     var imageindex = 0
     
-    var barHeight: CGFloat = 0.0
-    var displayWidth: CGFloat = 0.0
-    var displayHeight: CGFloat = 0.0
-    var timer: NSTimer!
-    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func next(sender: AnyObject) {
@@ -37,6 +32,8 @@ class ViewController: UIViewController {
         let image:UIImage! = UIImage(named: photos[imageindex])
         imageView.image = image
     }
+    
+    // タイマー
     
     
     override func viewDidLoad() {
