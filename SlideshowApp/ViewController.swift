@@ -10,9 +10,45 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let photos = ["焼肉.jpg","焼きそば.jpg","ラーメン.jpg"]
+    var imageindex = 0
+    
+    var barHeight: CGFloat = 0.0
+    var displayWidth: CGFloat = 0.0
+    var displayHeight: CGFloat = 0.0
+    var timer: NSTimer!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBAction func next(sender: AnyObject) {
+        imageindex += 1
+        if imageindex == 3 {
+            imageindex = 0
+        }
+        let image:UIImage! = UIImage(named: photos[imageindex])
+        imageView.image = image
+    }
+    
+    @IBAction func back(sender: AnyObject) {
+        imageindex -= 1
+        if imageindex == -1 {
+            imageindex = 2
+        }
+        let image:UIImage! = UIImage(named: photos[imageindex])
+        imageView.image = image
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let image:UIImage! = UIImage(named: photos[imageindex])
+        imageView.image = image
+        
+        
+        
+    
     }
 
     override func didReceiveMemoryWarning() {

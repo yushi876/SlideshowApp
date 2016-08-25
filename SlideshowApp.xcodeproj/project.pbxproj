@@ -12,6 +12,9 @@
 		D735171B1D6E9FED005B40B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73517191D6E9FED005B40B7 /* Main.storyboard */; };
 		D735171D1D6E9FED005B40B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D735171C1D6E9FED005B40B7 /* Assets.xcassets */; };
 		D73517201D6E9FED005B40B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D735171E1D6E9FED005B40B7 /* LaunchScreen.storyboard */; };
+		D735172A1D6F0FE5005B40B7 /* ラーメン.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D73517271D6F0FE5005B40B7 /* ラーメン.jpg */; };
+		D735172B1D6F0FE5005B40B7 /* 焼きそば.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D73517281D6F0FE5005B40B7 /* 焼きそば.jpg */; };
+		D735172C1D6F0FE5005B40B7 /* 焼肉.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D73517291D6F0FE5005B40B7 /* 焼肉.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		D735171C1D6E9FED005B40B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D735171F1D6E9FED005B40B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D73517211D6E9FED005B40B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D73517271D6F0FE5005B40B7 /* ラーメン.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ラーメン.jpg"; sourceTree = "<group>"; };
+		D73517281D6F0FE5005B40B7 /* 焼きそば.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "焼きそば.jpg"; sourceTree = "<group>"; };
+		D73517291D6F0FE5005B40B7 /* 焼肉.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "焼肉.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				D735171C1D6E9FED005B40B7 /* Assets.xcassets */,
 				D735171E1D6E9FED005B40B7 /* LaunchScreen.storyboard */,
 				D73517211D6E9FED005B40B7 /* Info.plist */,
+				D73517271D6F0FE5005B40B7 /* ラーメン.jpg */,
+				D73517281D6F0FE5005B40B7 /* 焼きそば.jpg */,
+				D73517291D6F0FE5005B40B7 /* 焼肉.jpg */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -122,9 +131,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D735172A1D6F0FE5005B40B7 /* ラーメン.jpg in Resources */,
 				D73517201D6E9FED005B40B7 /* LaunchScreen.storyboard in Resources */,
 				D735171D1D6E9FED005B40B7 /* Assets.xcassets in Resources */,
 				D735171B1D6E9FED005B40B7 /* Main.storyboard in Resources */,
+				D735172C1D6F0FE5005B40B7 /* 焼肉.jpg in Resources */,
+				D735172B1D6F0FE5005B40B7 /* 焼きそば.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
