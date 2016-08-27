@@ -28,6 +28,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEL-iH-7Be">
                                 <rect key="frame" x="285" y="535" width="30" height="30"/>
                                 <state key="normal" title="再生"/>
+                                <state key="highlighted" title="停止"/>
                                 <connections>
                                     <action selector="resume:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1s5-Ob-WtQ"/>
                                 </connections>
@@ -61,6 +62,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="hFh-fu-qg0" id="OU5-xk-ntf"/>
+                        <outlet property="resumeOutlet" destination="vEL-iH-7Be" id="3bM-tx-Fht"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

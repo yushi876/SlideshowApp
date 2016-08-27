@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     let photos = ["焼肉.jpg","焼きそば.jpg","ラーメン.jpg"]
     var imageindex = 0
     var timer:NSTimer = NSTimer()
-    
+
     @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func next(sender: AnyObject) {
@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     }
     
     // 再生ボタンを押した時の処理
+    @IBOutlet weak var resumeOutlet: UIButton!
     @IBAction func resume(sender: AnyObject) {
         // タイマー
         timer = NSTimer.scheduledTimerWithTimeInterval(2.0,
@@ -42,9 +43,10 @@ class ViewController: UIViewController {
                                                    selector: #selector(ViewController.next(_:)),
                                                    userInfo: nil,
                                                    repeats: true)
+        // 一度押したら、「停止」ボタンが表示
+        resumeOutlet.setTitle("停止", forState: UIControlState.Normal)
     
     }
-    
     
     
     // 拡大画面から戻る
