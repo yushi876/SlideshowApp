@@ -61,7 +61,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backOutlet" destination="cfC-oQ-9v6" id="uyY-8f-KIi"/>
                         <outlet property="imageView" destination="hFh-fu-qg0" id="OU5-xk-ntf"/>
+                        <outlet property="nextOutlet" destination="gDN-BE-fpk" id="1Pc-4G-6eb"/>
                         <outlet property="resumeOutlet" destination="vEL-iH-7Be" id="3bM-tx-Fht"/>
                     </connections>
                 </viewController>

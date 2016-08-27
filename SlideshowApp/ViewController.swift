@@ -16,6 +16,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var nextOutlet: UIButton!
     @IBAction func next(sender: AnyObject) {
         imageindex += 1
         if imageindex == 3 {
@@ -25,6 +26,8 @@ class ViewController: UIViewController {
         imageView.image = image
     }
     
+    
+    @IBOutlet weak var backOutlet: UIButton!
     @IBAction func back(sender: AnyObject) {
         imageindex -= 1
         if imageindex == -1 {
@@ -37,6 +40,7 @@ class ViewController: UIViewController {
     // 再生ボタンを押した時の処理
     @IBOutlet weak var resumeOutlet: UIButton!
     @IBAction func resume(sender: AnyObject) {
+        if nextOutlet.enabled == true {
         // タイマー
         timer = NSTimer.scheduledTimerWithTimeInterval(2.0,
                                                    target: self,
@@ -45,7 +49,15 @@ class ViewController: UIViewController {
                                                    repeats: true)
         // 一度押したら、「停止」ボタンが表示
         resumeOutlet.setTitle("停止", forState: UIControlState.Normal)
-    
+        // 進む・戻るボタンを無効にする
+        nextOutlet.enabled = false
+        backOutlet.enabled = false
+        } else {
+            timer.invalidate()
+            resumeOutlet.setTitle("再生", forState: UIControlState.Normal)
+            nextOutlet.enabled = true
+            backOutlet.enabled = true
+        }
     }
     
     
