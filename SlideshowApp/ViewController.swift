@@ -33,8 +33,7 @@ class ViewController: UIViewController {
         if imageindex == -1 {
             imageindex = 2
         }
-        let image:UIImage! = UIImage(named: photos[imageindex])
-        imageView.image = image
+
     }
     
     // 再生ボタンを押した時の処理
@@ -60,11 +59,6 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    // 拡大画面から戻る
-    @IBAction func unwind(segue: UIStoryboardSegue) {
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -74,12 +68,22 @@ class ViewController: UIViewController {
     
     }
     
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        }
+    
+    // 画面遷移
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+        let zoomViewController:ZoomViewController = segue.destinationViewController as! ZoomViewController
+        zoomViewController.zoomzoomimage = imageView.image!
     }
-
-
-}
+    
+        // 拡大画面から戻る
+        func unwind(segue: UIStoryboardSegue) {
+        }
+        
+    
+    }
 

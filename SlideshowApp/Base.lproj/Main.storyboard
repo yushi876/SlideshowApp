@@ -70,8 +70,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="PA0-Ud-KcJ">
                     <connections>
-                        <outlet property="delegate" destination="hFh-fu-qg0" id="Xpd-JV-p2Q"/>
-                        <segue destination="BZL-3S-Tey" kind="show" id="klQ-oR-VWa"/>
+                        <segue destination="BZL-3S-Tey" kind="show" id="MMe-sr-kgh"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -96,7 +95,7 @@
                                 <rect key="frame" x="285" y="535" width="30" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
-                                    <segue destination="yNT-Aa-81e" kind="unwind" unwindAction="unwind:" id="W45-lu-MKD"/>
+                                    <segue destination="yNT-Aa-81e" kind="unwind" unwindAction="unwind:" id="wfV-tw-CUf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -106,6 +105,9 @@
                             <constraint firstItem="so0-bZ-s5X" firstAttribute="centerX" secondItem="gWb-d0-YeC" secondAttribute="centerX" id="g5R-3f-epk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="zoomimage" destination="KeJ-AO-Vjg" id="MIL-YU-6DQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKD-CM-zBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="yNT-Aa-81e" userLabel="Exit" sceneMemberID="exit"/>
