@@ -17,13 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hFh-fu-qg0">
-                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hFh-fu-qg0">
+                                <rect key="frame" x="175" y="175" width="250" height="250"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="4IL-z9-ThR"/>
-                                    <constraint firstAttribute="height" constant="300" id="dja-eb-JGa"/>
+                                    <constraint firstAttribute="width" constant="250" id="4IL-z9-ThR"/>
+                                    <constraint firstAttribute="height" constant="250" id="dja-eb-JGa"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="PA0-Ud-KcJ" appends="YES" id="RC4-D1-J4C"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEL-iH-7Be">
                                 <rect key="frame" x="285" y="535" width="30" height="30"/>
@@ -88,21 +91,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KeJ-AO-Vjg">
-                                <rect key="frame" x="180" y="175" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KeJ-AO-Vjg">
+                                <rect key="frame" x="75" y="43" width="450" height="485"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="450" id="Gpm-ya-oZj"/>
+                                    <constraint firstAttribute="height" constant="485" id="LNL-PD-41g"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="so0-bZ-s5X">
-                                <rect key="frame" x="285" y="535" width="30" height="30"/>
+                                <rect key="frame" x="285" y="560" width="30" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="yNT-Aa-81e" kind="unwind" unwindAction="unwind:" id="wfV-tw-CUf"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="so0-bZ-s5X" firstAttribute="centerY" secondItem="gWb-d0-YeC" secondAttribute="centerY" constant="250" id="DEU-nc-6WK"/>
+                            <constraint firstItem="so0-bZ-s5X" firstAttribute="centerY" secondItem="gWb-d0-YeC" secondAttribute="centerY" constant="275" id="DEU-nc-6WK"/>
+                            <constraint firstItem="KeJ-AO-Vjg" firstAttribute="centerX" secondItem="gWb-d0-YeC" secondAttribute="centerX" id="KUf-ue-A1B"/>
                             <constraint firstItem="so0-bZ-s5X" firstAttribute="centerX" secondItem="gWb-d0-YeC" secondAttribute="centerX" id="g5R-3f-epk"/>
+                            <constraint firstItem="KeJ-AO-Vjg" firstAttribute="centerY" secondItem="gWb-d0-YeC" secondAttribute="centerY" constant="-15" id="wrk-F5-zai"/>
                         </constraints>
                     </view>
                     <connections>
