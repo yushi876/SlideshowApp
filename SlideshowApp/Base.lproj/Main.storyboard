@@ -106,15 +106,20 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KeJ-AO-Vjg">
                                 <rect key="frame" x="75" y="43" width="450" height="485"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="Gpm-ya-oZj"/>
                                     <constraint firstAttribute="height" constant="485" id="LNL-PD-41g"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3et-zI-dAf" appends="YES" id="7is-eD-acW"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="so0-bZ-s5X">
                                 <rect key="frame" x="285" y="560" width="30" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
+                                    <action selector="unwind:" destination="BZL-3S-Tey" eventType="touchUpInside" id="bLZ-h8-Or5"/>
                                     <segue destination="yNT-Aa-81e" kind="unwind" unwindAction="unwind:" id="wfV-tw-CUf"/>
                                 </connections>
                             </button>
@@ -132,6 +137,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKD-CM-zBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="3et-zI-dAf">
+                    <connections>
+                        <action selector="unwind:" destination="BZL-3S-Tey" id="Plj-jF-Fvv"/>
+                    </connections>
+                </swipeGestureRecognizer>
                 <exit id="yNT-Aa-81e" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="940" y="295"/>
