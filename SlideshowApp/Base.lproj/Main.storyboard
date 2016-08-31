@@ -26,6 +26,8 @@
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="PA0-Ud-KcJ" appends="YES" id="RC4-D1-J4C"/>
+                                    <outletCollection property="gestureRecognizers" destination="p6f-aB-gGS" appends="YES" id="mMe-Cm-aZD"/>
+                                    <outletCollection property="gestureRecognizers" destination="i2B-zc-TgB" appends="YES" id="P3W-RE-1od"/>
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEL-iH-7Be">
@@ -52,6 +54,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="hFh-fu-qg0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3Fl-wv-Nm8"/>
                             <constraint firstItem="hFh-fu-qg0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="58j-Ex-ULE"/>
@@ -76,6 +79,16 @@
                         <segue destination="BZL-3S-Tey" kind="show" id="MMe-sr-kgh"/>
                     </connections>
                 </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="p6f-aB-gGS">
+                    <connections>
+                        <action selector="back:" destination="BYZ-38-t0r" id="QoY-R2-SrN"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="i2B-zc-TgB">
+                    <connections>
+                        <action selector="next:" destination="BYZ-38-t0r" id="aqS-50-jMN"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="288" y="295"/>
         </scene>
