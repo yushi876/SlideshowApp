@@ -26,6 +26,11 @@ class ZoomViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func unwind(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
     
     /*
     // MARK: - Navigation
